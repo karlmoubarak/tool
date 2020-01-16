@@ -2,12 +2,16 @@
   margin: 20px;
   width: 500px;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 3px;
 }
+.toolHeader, .toolContent, .toolFooter {
+  margin-left: 2px;
+}
+
 .toolHeader {
   border-bottom: 1px solid black;
 }
-.toolContents {
+.toolContent {
   height: 500px;
 }
 .toolFooter {

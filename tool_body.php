@@ -13,7 +13,7 @@ class tool {
 		$ret .= '<tr>';
 		$ret .= '<td>FileContents (Jeroens Syntax)</td>';
 		$ret .= '</tr>';
-    $ret .= '<tr class="toolContents">';
+    $ret .= '<tr class="toolContent">';
     $ret .= '<td>{{#github:readme.md|hackersanddesigners/hdsa2019doc}}</td>';
     $ret .= '</tr>';
 		$ret .= '<tr class="toolFooter">';
