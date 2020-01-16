@@ -15,8 +15,8 @@ class tool {
 		return implode( '<br />', $attr ) . "\n\n" . htmlspecialchars( $input );
 
 		$github = 'https://github.com';
-		$repo = $args['repo']
-		$file = $args['file']
+		$repo = $args['repo'];
+		$file = $args['file'];
 		// $repo = 'hackersanddesigners/hdsa2019doc';
 		// $file = 'readme.md';
 
