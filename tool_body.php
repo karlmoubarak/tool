@@ -4,10 +4,13 @@ class tool {
 		$parser->setHook( 'tool', array( __CLASS__, 'toolRender' ) );
 		return true;
 	}
-	static function toolRender( $input, array $args, Parser $parser, PPFrame $frame ) {
+	static function toolRender( $text, array $args, Parser $parser, PPFrame $frame ) {
 		// $repo = $args['repo']
 		// $filname = $args['filename']
 		// $branch = $args['branch']
+
+		$text = '{{#github:readme.md|hackersanddesigners/hdsa2019doc}}';
+		$jeroen = $parser->recursiveTagParse( $text, $frame );
 
 		$parser->getOutput()->addModules( 'ext.tool' );
 
@@ -16,7 +19,7 @@ class tool {
 		$ret .= '<td>GithubRepository/Path/Filename</td>';
 		$ret .= '</tr>';
     $ret .= '<tr class="toolContent">';
-    $ret .= '<td>{{#github:readme.md|hackersanddesigners/hdsa2019doc}}</td>';
+    $ret .= '<td>' . $jeroen . '</td>';
 		$ret .= '<td>Figure out how to integrate Jeroens github api here wih args</td>';
     $ret .= '</tr>';
 		$ret .= '<tr class="toolFooter">';
