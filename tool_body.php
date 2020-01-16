@@ -4,11 +4,11 @@ class tool {
 		$parser->setHook( 'tool', array( __CLASS__, 'toolRender' ) );
 		return true;
 	}
-	static function toolRender( $text, array $args, Parser $parser, PPFrame $frame ) {
+	static function toolRender( array $args, Parser $parser, PPFrame $frame ) {
 		// $repo = $args['repo']
 		// $filname = $args['filename']
 		// $branch = $args['branch']
-		
+
 		$parser->getOutput()->addModules( 'ext.tool' );
 
 		$text = '{{#github:readme.md|hackersanddesigners/hdsa2019doc}}';
