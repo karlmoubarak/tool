@@ -8,13 +8,12 @@ class tool {
 		// $repo = $args['repo']
 		// $filname = $args['filename']
 		// $branch = $args['branch']
+		$parser->getOutput()->addModules( 'ext.tool' );
 
 		$repo = 'hackersanddesigners/hdsa2019doc'
 		$filname = 'readme.md'
 
-		$parser->getOutput()->addModules( 'ext.tool' );
-
-		$text = "{{#github:{$filname}|{$repo}}}";
+		$text = '{{#github:' . $filname . '|' . $repo . '}}';
 		$jeroen = $parser->recursiveTagParse( $text, $frame );
 
 		$ret = '<table class="toolTable">';
