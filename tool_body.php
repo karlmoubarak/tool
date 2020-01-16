@@ -21,12 +21,10 @@ class tool {
 		$ret .= '<tr class="toolHeader">';
 		$ret .= "<td><a href='{$github}/{$user}' target='_blank'>{$user}</a> / <a href='{$github}/{$user}/{$repo}' target='_blank'>{$repo}</a> / {$file}</td>";
 		$ret .= '</tr>';
-		$ret .= '<hr>';
     $ret .= '<tr class="toolContent">';
     $ret .= "<td>{$jeroen}</td>";
     $ret .= '</tr>';
 		$ret .= '<tr class="toolFooter">';
-		$ret .= '<hr>';
 		$ret .= '<td><a href="https://hackersanddesigners.nl/s/Tools">view more tools</a></td>';
 		$ret .= '<td><a href="' . $url . '" target="_blank">view in GitHub</a></td>';
 		$ret .= '</tr>';
