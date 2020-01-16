@@ -21,7 +21,7 @@ tr.toolHeader {
   column-span: all;
   text-align: left;
 }
-tr.toolConten {
+tr.toolContent {
   max-height: 500px;
   overflow: scroll;
   column-span: all;
