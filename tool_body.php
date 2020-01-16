@@ -19,7 +19,7 @@ class tool {
 
 		$ret = '<table class="toolTable">';
 		$ret .= '<tr class="toolHeader">';
-		$ret .= "<td>{$repo}</td>";
+		$ret .= "<td>{$user} / {$repo}</td>";
 		$ret .= '</tr>';
     $ret .= '<tr class="toolContent">';
     $ret .= "<td>{$jeroen}</td>";
