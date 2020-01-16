@@ -4,5 +4,5 @@ $wgHooks['ParserFirstCallInit'][] = 'tool::onParserInit';
 $wgResourceModules['ext.tool'] = array(
 	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'tool',
-	'styles' => 'tool.css'
+	'styles' => 'resources/tool.css'
 );
