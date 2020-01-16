@@ -5,9 +5,9 @@ class tool {
 		return true;
 	}
 	static function toolRender( $input, array $args, Parser $parser, PPFrame $frame ) {
-		$repo = $args['repo']
-		$filname = $args['filename']
-		$branch = $args['branch']
+		// $repo = $args['repo']
+		// $filname = $args['filename']
+		// $branch = $args['branch']
 
 		$parser->getOutput()->addModules( 'ext.tool' );
 
