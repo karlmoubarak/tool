@@ -9,20 +9,20 @@ table.toolTable {
 table.toolTable tbody {
   margin-left: 10px;
 }
-table.toolHeader, table.toolContent, table.toolFooter {
+.toolHeader, .toolContent, .toolFooter {
   padding-left: 5px;
   padding-right: 5px;
 }
-table.toolHeader {
+.toolHeader {
 }
-table.toolContent td {
+.toolContent td {
   max-height: 500px;
   overflow: scroll;
   column-span: all;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
-table.toolFooter {
+.toolFooter {
 }
 table, th, td {
   border: 1px solid black;
