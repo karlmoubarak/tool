@@ -8,7 +8,7 @@ class tool {
 		// $branch = $args['branch']
 		$parser->getOutput()->addModules( 'ext.tool' );
 
-		$attr = [repo, file];
+		$attr = ['repo', 'file'];
 		foreach( $args as $name => $value ) {
 			$attr[] = '<strong>' . htmlspecialchars( $name ) . '</strong> = ' . htmlspecialchars( $value );
 		}
