@@ -7,9 +7,6 @@
   /* filter: drop-shadow(1px 1px 8px black); */
   background: lightgoldenrodyellow;
 }
-.toolTable tbody {
-  margin-left: 10px;
-}
 .toolTable th, .toolTable td {
   border: 1px solid black;
   padding: 5px;
@@ -24,12 +21,13 @@
 .toolContent {
   max-height: 500px;
   overflow: scroll;
-  column-span: all;
+  /* column-span: all; */
+  padding: 10px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 .toolContent td {
-  column-span: all;
+  /* column-span: all; */
 }
 .toolFooter td {
   text-align: center;
