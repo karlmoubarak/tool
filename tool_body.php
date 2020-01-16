@@ -7,17 +7,9 @@ class tool {
 	static function toolRender( $text, array $args, Parser $parser, PPFrame $frame ) {
 		$parser->getOutput()->addModules( 'ext.tool' );
 
-		// $attr = ['repo', 'file'];
-		// foreach( $args as $name => $value ) {
-		// 	$attr[] = '<strong>' . htmlspecialchars( $name ) . '</strong> = ' . htmlspecialchars( $value );
-		// }
-		// return implode( '<br />', $attr ) . "\n\n" . htmlspecialchars( $input );
-
 		$github = 'https://github.com';
 		$repo = $args['repo'];
 		$file = $args['file'];
-		// $repo = 'hackersanddesigners/hdsa2019doc';
-		// $file = 'readme.md';
 
 		$url = $github . '/' . $repo;
 
