@@ -6,23 +6,23 @@ table.toolTable {
   /* filter: drop-shadow(1px 1px 8px black); */
   background: lightgoldenrodyellow;
 }
-.toolTable tbody {
+table.toolTable tbody {
   margin-left: 10px;
 }
-.toolHeader, .toolContent, .toolFooter {
+table.toolHeader, table.toolContent, table.toolFooter {
   padding-left: 5px;
   padding-right: 5px;
 }
-.toolHeader {
+table.toolHeader {
 }
-.toolContent td {
+table.toolContent td {
   max-height: 500px;
   overflow: scroll;
   column-span: all;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
-.toolFooter {
+table.toolFooter {
 }
 table, th, td {
   border: 1px solid black;
