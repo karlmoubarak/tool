@@ -21,14 +21,14 @@ class tool {
 
 		$ret = '<table class="toolTable">';
 		$ret .= '<tr class="toolHeader">';
-		$ret .= "<td>{$url}</td>";
+		$ret .= "<td>{$repo}</td>";
 		$ret .= '</tr>';
     $ret .= '<tr class="toolContent">';
     $ret .= "<td>{$jeroen}</td>";
     $ret .= '</tr>';
 		$ret .= '<tr class="toolFooter">';
 		$ret .= '<td><a href="">view more tools</a></td>';
-		$ret .= '<td><a href="">view in GitHub</a></td>';
+		$ret .= '<td><a href="' . $url . '" target="_blank">view in GitHub</a></td>';
 		$ret .= '</tr>';
 		$ret .= '</table>';
     // $ret .= '<p>also appears in:</p>';
