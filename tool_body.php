@@ -23,7 +23,7 @@ class tool {
 		$ret .= "<tr class='toolContent'><td colspan='2'>{$jeroen}</td></tr>";
 		$ret .= '<tr class="toolFooter">';
 		$ret .= '<td><a href="https://hackersanddesigners.nl/s/Tools">view more tools</a></td>';
-		$ret .= '<td><a href="' . $url . '" target="_blank">view in GitHub ↗</a></td>';
+		$ret .= '<td><a href="' . $url . '" target="_blank">↗ view in GitHub ↗</a></td>';
 		$ret .= '</tr>';
 		$ret .= '</tbody>';
 		$ret .= '</table>';
