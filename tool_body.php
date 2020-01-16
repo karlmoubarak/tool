@@ -7,16 +7,16 @@ class tool {
 	static function toolRender( $input, array $args, Parser $parser, PPFrame $frame ) {
 		$parser->getOutput()->addModules( 'ext.tool' );
 		$ret = '<table class="toolTable">';
-		$ret .= '<tr>';
+		$ret .= '<tr class="toolHeader">';
 		$ret .= '<td>GithubRepository/Path/Filename</td>';
 		$ret .= '</tr>';
 		$ret .= '<tr>';
 		$ret .= '<td>FileContents (Jeroens Syntax)</td>';
 		$ret .= '</tr>';
-    $ret .= '<tr>';
-    $ret .= '<td style="height: 500px">{{#github:readme.md|hackersanddesigners/hdsa2019doc}}</td>';
+    $ret .= '<tr class="toolContents">';
+    $ret .= '<td>{{#github:readme.md|hackersanddesigners/hdsa2019doc}}</td>';
     $ret .= '</tr>';
-		$ret .= '<tr>';
+		$ret .= '<tr class="toolFooter">';
 		$ret .= '<td><a href="">view more tools</a></td>';
 		$ret .= '<td><a href="">view in GitHub</a></td>';
 		$ret .= '</tr>';
