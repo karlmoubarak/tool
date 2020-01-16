@@ -4,15 +4,14 @@ class tool {
 		$parser->setHook( 'tool', array( __CLASS__, 'toolRender' ) );
 		return true;
 	}
-	static function toolRender( $text, $input, array $args, Parser $parser, PPFrame $frame ) {
-		// $branch = $args['branch']
+	static function toolRender( $text, array $args, Parser $parser, PPFrame $frame ) {
 		$parser->getOutput()->addModules( 'ext.tool' );
 
-		$attr = ['repo', 'file'];
-		foreach( $args as $name => $value ) {
-			$attr[] = '<strong>' . htmlspecialchars( $name ) . '</strong> = ' . htmlspecialchars( $value );
-		}
-		return implode( '<br />', $attr ) . "\n\n" . htmlspecialchars( $input );
+		// $attr = ['repo', 'file'];
+		// foreach( $args as $name => $value ) {
+		// 	$attr[] = '<strong>' . htmlspecialchars( $name ) . '</strong> = ' . htmlspecialchars( $value );
+		// }
+		// return implode( '<br />', $attr ) . "\n\n" . htmlspecialchars( $input );
 
 		$github = 'https://github.com';
 		$repo = $args['repo'];
