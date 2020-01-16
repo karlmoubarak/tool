@@ -4,7 +4,7 @@ class tool {
 		$parser->setHook( 'tool', array( __CLASS__, 'toolRender' ) );
 		return true;
 	}
-	static function toolRender( $repo, $filename, $text, $jeroen, array $args, Parser $parser, PPFrame $frame ) {
+	static function toolRender( $text, array $args, Parser $parser, PPFrame $frame ) {
 		// $repo = $args['repo']
 		// $filename = $args['filename']
 		// $branch = $args['branch']
