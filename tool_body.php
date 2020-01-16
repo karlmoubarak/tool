@@ -5,18 +5,24 @@ class tool {
 		return true;
 	}
 	static function toolRender( $text, array $args, Parser $parser, PPFrame $frame ) {
-		// $repo = $args['repo']
-		// $filename = $args['filename']
 		// $branch = $args['branch']
 		$parser->getOutput()->addModules( 'ext.tool' );
 
+		$attr = [repo, file];
+		foreach( $args as $name => $value ) {
+			$attr[] = '<strong>' . htmlspecialchars( $name ) . '</strong> = ' . htmlspecialchars( $value );
+		}
+		return implode( '<br />', $attr ) . "\n\n" . htmlspecialchars( $input );
+
 		$github = 'https://github.com';
-		$repo = 'hackersanddesigners/hdsa2019doc';
-		$filename = 'readme.md';
+		$repo = $args['repo']
+		$file = $args['file']
+		// $repo = 'hackersanddesigners/hdsa2019doc';
+		// $file = 'readme.md';
 
 		$url = $github . '/' . $repo;
 
-		$text = '{{#github:' . $filename . '|' . $repo . '}}';
+		$text = '{{#github:' . $file . '|' . $repo . '}}';
 		$jeroen = $parser->recursiveTagParse( $text, $frame );
 
 		$ret = '<table class="toolTable">';
@@ -27,7 +33,7 @@ class tool {
     $ret .= "<td>{$jeroen}</td>";
     $ret .= '</tr>';
 		$ret .= '<tr class="toolFooter">';
-		$ret .= '<td><a href="">view more tools</a></td>';
+		$ret .= '<td><a href="https://hackersanddesigners.nl/s/Tools">view more tools</a></td>';
 		$ret .= '<td><a href="' . $url . '" target="_blank">view in GitHub</a></td>';
 		$ret .= '</tr>';
 		$ret .= '</table>';
