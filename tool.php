@@ -5,3 +5,4 @@ $wgHooks['ParserFirstCallInit'][] = 'tool::onParserInit';
 // :)))))))
 // :(((((((
 // :|||||||
+// :|||||||
