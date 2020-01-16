@@ -6,14 +6,14 @@ class tool {
 	}
 	static function toolRender( $repo, $filename, $text, array $args, Parser $parser, PPFrame $frame ) {
 		// $repo = $args['repo']
-		// $filname = $args['filename']
+		// $filename = $args['filename']
 		// $branch = $args['branch']
 		$parser->getOutput()->addModules( 'ext.tool' );
 
 		$repo = 'hackersanddesigners/hdsa2019doc';
-		$filname = 'readme.md';
+		$filename = 'readme.md';
 
-		$text = '{{#github:' . $filname . '|' . $repo . '}}';
+		$text = '{{#github:' . $filename . '|' . $repo . '}}';
 		$jeroen = $parser->recursiveTagParse( $text, $frame );
 
 		$ret = '<table class="toolTable">';
