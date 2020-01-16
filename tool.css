@@ -32,3 +32,6 @@ table.toolTable th, table.toolTable td {
 }
 table, th, td {
 }
+table.toolTable p {
+  margin: 0px;
+}
