@@ -18,9 +18,9 @@ class tool {
 		$jeroen = $parser->recursiveTagParse( $text, $frame );
 
 		$ret = '<table class="toolTable">';
-		$ret .= '<tr class="toolHeader" colspan="2">';
+		$ret .= '<tbody>';
+		$ret .= '<th class="toolHeader" colspan="2">';
 		$ret .= "<td><a href='{$github}/{$user}' target='_blank'>{$user}</a> / <a href='{$github}/{$user}/{$repo}' target='_blank'>{$repo}</a> / {$file}</td>";
-		$ret .= '</tr>';
     $ret .= '<tr class="toolContent" colspan="2">';
     $ret .= "<td>{$jeroen}</td>";
     $ret .= '</tr>';
@@ -28,6 +28,7 @@ class tool {
 		$ret .= '<td><a href="https://hackersanddesigners.nl/s/Tools">view more tools</a></td>';
 		$ret .= '<td><a href="' . $url . '" target="_blank">view in GitHub</a></td>';
 		$ret .= '</tr>';
+		$ret .= '</tbody>';
 		$ret .= '</table>';
     // $ret .= '<p>also appears in:</p>';
 		return $ret;
