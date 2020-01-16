@@ -18,7 +18,7 @@
   column-span: all;
   /* text-align: left; */
 }
-.toolContent {
+.toolContent td {
   max-height: 500px;
   overflow: scroll;
   /* column-span: all; */
