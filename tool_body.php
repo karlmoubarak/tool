@@ -5,7 +5,8 @@ class tool {
 		return true;
 	}
 	static function toolRender( $input, array $args, Parser $parser, PPFrame $frame ) {
-		$ret = '<table>';
+		$parser->getOutput()->addModules( 'ext.tool' );
+		$ret = '<table class="toolTable">';
 		$ret .= '<tr>';
 		$ret .= '<td>GithubRepository/Path/Filename</td>';
 		$ret .= '</tr>';
