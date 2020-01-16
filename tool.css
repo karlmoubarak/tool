@@ -1,4 +1,4 @@
-table.toolTable {
+.toolTable {
   margin: 20px;
   width: 500px;
   border: 1px solid black;
@@ -7,28 +7,28 @@ table.toolTable {
   /* filter: drop-shadow(1px 1px 8px black); */
   background: lightgoldenrodyellow;
 }
-table.toolTable tbody {
+.toolTable tbody {
   margin-left: 10px;
 }
-table.toolTable th, table.toolTable td {
+.toolTable th, .toolTable td {
   border: 1px solid black;
   padding: 5px;
 }
 .toolHeader, .toolContent, .toolFooter {
 
 }
-tr.toolHeader {
+.toolHeader th{
   column-span: all;
   text-align: left;
 }
-tr.toolContent {
+.toolContent {
   max-height: 500px;
   overflow: scroll;
   column-span: all;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
-tr.toolContent td {
+.toolContent td {
   column-span: all;
 }
 .toolFooter td {
@@ -36,6 +36,6 @@ tr.toolContent td {
 }
 table, th, td {
 }
-table.toolTable p {
+.toolTable p {
   margin: 0px;
 }
