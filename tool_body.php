@@ -10,15 +10,18 @@ class tool {
 		// $branch = $args['branch']
 		$parser->getOutput()->addModules( 'ext.tool' );
 
+		$github = 'https://github.com';
 		$repo = 'hackersanddesigners/hdsa2019doc';
 		$filename = 'readme.md';
+
+		$url = $github . '/' . $repo;
 
 		$text = '{{#github:' . $filename . '|' . $repo . '}}';
 		$jeroen = $parser->recursiveTagParse( $text, $frame );
 
 		$ret = '<table class="toolTable">';
 		$ret .= '<tr class="toolHeader">';
-		$ret .= '<td>GithubRepository/Path/Filename</td>';
+		$ret .= "<td>{$url}</td>";
 		$ret .= '</tr>';
     $ret .= '<tr class="toolContent">';
     $ret .= "<td>{$jeroen}</td>";
