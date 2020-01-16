@@ -6,7 +6,7 @@ table.toolTable {
   /* filter: drop-shadow(1px 1px 8px black); */
   background: lightgoldenrodyellow;
 }
-table.toolTable tbody {
+.toolTable tbody {
   margin-left: 10px;
 }
 .toolHeader, .toolContent, .toolFooter {
@@ -15,7 +15,7 @@ table.toolTable tbody {
 }
 .toolHeader {
 }
-.toolContent {
+.toolContent td {
   max-height: 500px;
   overflow: scroll;
   column-span: all;
