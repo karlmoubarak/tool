@@ -19,8 +19,8 @@ class tool {
 
 		$ret = '<table class="toolTable">';
 		$ret .= '<tbody>';
-		$ret .= "<th class='toolHeader' colspan='2'><a href='{$github}/{$user}' target='_blank'>{$user}</a> / <a href='{$github}/{$user}/{$repo}' target='_blank'>{$repo}</a> / {$file}</th>";
-		$ret .= '<tr class="toolContent" colspan="2">';
+		$ret .= "<th class='toolHeader'><a href='{$github}/{$user}' target='_blank'>{$user}</a> / <a href='{$github}/{$user}/{$repo}' target='_blank'>{$repo}</a> / {$file}</th>";
+		$ret .= '<tr class="toolContent">';
     $ret .= "<td>{$jeroen}</td>";
     $ret .= '</tr>';
 		$ret .= '<tr class="toolFooter">';

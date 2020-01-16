@@ -19,6 +19,7 @@ table.toolTable th, table.toolTable td {
 }
 tr.toolHeader {
   column-span: all;
+  text-align: left;
 }
 tr.toolConten {
   max-height: 500px;
@@ -27,7 +28,8 @@ tr.toolConten {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
-.toolFooter {
+.toolFooter td {
+  text-align: center;
 }
 table, th, td {
 }
