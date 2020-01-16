@@ -8,12 +8,13 @@ class tool {
 		$parser->getOutput()->addModules( 'ext.tool' );
 
 		$github = 'https://github.com';
+		$user = $args['user'];
 		$repo = $args['repo'];
 		$file = $args['file'];
 
-		$url = $github . '/' . $repo;
+		$url = $github . '/' . $user . '/' . $repo;
 
-		$text = '{{#github:' . $file . '|' . $repo . '}}';
+		$text = '{{#github:' . $file . '|' . $user . '/' . $repo . '}}';
 		$jeroen = $parser->recursiveTagParse( $text, $frame );
 
 		$ret = '<table class="toolTable">';
