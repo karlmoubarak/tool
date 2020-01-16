@@ -4,7 +4,7 @@ class tool {
 		$parser->setHook( 'tool', array( __CLASS__, 'toolRender' ) );
 		return true;
 	}
-	static function toolRender( array $args, Parser $parser, PPFrame $frame ) {
+	static function toolRender( $text, array $args, Parser $parser, PPFrame $frame ) {
 		// $repo = $args['repo']
 		// $filname = $args['filename']
 		// $branch = $args['branch']
@@ -19,7 +19,7 @@ class tool {
 		$ret .= '<td>GithubRepository/Path/Filename</td>';
 		$ret .= '</tr>';
     $ret .= '<tr class="toolContent">';
-    $ret .= '<td>' . $jeroen . '</td>';
+    $ret .= "<td>{$jeroen}</td>";
     $ret .= '</tr>';
 		$ret .= '<tr class="toolFooter">';
 		$ret .= '<td><a href="">view more tools</a></td>';
