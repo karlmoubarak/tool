@@ -20,7 +20,7 @@ class tool {
 		$ret = '<table class="toolTable">';
 		$ret .= '<tbody>';
 		$ret .= "<th class='toolHeader'><a href='{$github}/{$user}' target='_blank'>{$user}</a> / <a href='{$github}/{$user}/{$repo}' target='_blank'>{$repo}</a> / {$file}</th>";
-		$ret .= "<tr class='toolContent'>{$jeroen}</tr>";
+		$ret .= "<tr class='toolContent'><td coolspan='2'>{$jeroen}</td></tr>";
 		$ret .= '<tr class="toolFooter">';
 		$ret .= '<td><a href="https://hackersanddesigners.nl/s/Tools">view more tools</a></td>';
 		$ret .= '<td><a href="' . $url . '" target="_blank">view in GitHub</a></td>';
