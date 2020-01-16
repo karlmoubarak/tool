@@ -23,7 +23,7 @@ class tool {
 		$ret .= '<tr class="toolHeader">';
 		$ret .= "<td>{$repo}</td>";
 		$ret .= '</tr>';
-    $ret .= '<tr class="toolContent">';
+    $ret .= '<tr class="toolContent" colspan="2">';
     $ret .= "<td>{$jeroen}</td>";
     $ret .= '</tr>';
 		$ret .= '<tr class="toolFooter">';
