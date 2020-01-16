@@ -10,11 +10,16 @@ table.toolTable {
 table.toolTable tbody {
   margin-left: 10px;
 }
+table.toolTable th, table.toolTable td {
+  border: 1px solid black;
+  padding: 15px;
+}
 .toolHeader, .toolContent, .toolFooter {
   padding-left: 5px;
   padding-right: 5px;
 }
 .toolHeader {
+  column-span: all;
 }
 .toolContent td {
   max-height: 500px;
@@ -26,5 +31,4 @@ table.toolTable tbody {
 .toolFooter {
 }
 table, th, td {
-  border: 1px solid black;
 }
