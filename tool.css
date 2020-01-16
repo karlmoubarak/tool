@@ -1,6 +1,5 @@
 .toolTable {
   margin: 20px;
-  height: 500px;
   width: 500px;
   border: 1px solid black;
   border-radius: 5px;
@@ -8,9 +7,9 @@
 .toolHeader {
   border-bottom: 1px solid black;
 }
-.toolContents [
-
-]
+.toolContents {
+  height: 500px;
+}
 .toolFooter {
   border-top: 1px solid black;
 }
