@@ -17,7 +17,7 @@
 .toolHeader, .toolContent, .toolFooter {
 
 }
-.toolHeader th{
+.toolTable th{
   column-span: all;
   text-align: left;
 }
