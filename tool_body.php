@@ -4,7 +4,7 @@ class tool {
 		$parser->setHook( 'tool', array( __CLASS__, 'toolRender' ) );
 		return true;
 	}
-	static function toolRender( $text, array $args, Parser $parser, PPFrame $frame ) {
+	static function toolRender( $text, $input, array $args, Parser $parser, PPFrame $frame ) {
 		// $branch = $args['branch']
 		$parser->getOutput()->addModules( 'ext.tool' );
 
