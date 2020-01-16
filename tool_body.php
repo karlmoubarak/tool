@@ -21,7 +21,7 @@ class tool {
 		$ret .= '<tbody>';
 		$ret .= "<th class='toolHeader'><a href='{$github}/{$user}' target='_blank'>{$user}</a> / <a href='{$github}/{$user}/{$repo}' target='_blank'>{$repo}</a> / {$file}</th>";
 		$ret .= '<tr class="toolContent">';
-    $ret .= "<td>{$jeroen}</td>";
+    $ret .= "{$jeroen}";
     $ret .= '</tr>';
 		$ret .= '<tr class="toolFooter">';
 		$ret .= '<td><a href="https://hackersanddesigners.nl/s/Tools">view more tools</a></td>';

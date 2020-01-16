@@ -19,7 +19,7 @@
 }
 .toolTable th{
   column-span: all;
-  text-align: left;
+  /* text-align: left; */
 }
 .toolContent {
   max-height: 500px;
