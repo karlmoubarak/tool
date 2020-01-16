@@ -1,19 +1,20 @@
 .toolTable {
   margin: 20px;
-  width: 500px;
+  min-width: 500px;
   border: 1px solid black;
   border-radius: 3px;
+  /* filter: drop-shadow(1px 1px 8px black); */
+  background: lightgoldenrodyellow;
 }
 .toolHeader, .toolContent, .toolFooter {
-  margin-left: 2px;
+  margin-left: 3px;
 }
-
 .toolHeader {
-  border-bottom: 1px solid black;
 }
 .toolContent {
   height: 500px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .toolFooter {
-  border-top: 1px solid black;
 }
