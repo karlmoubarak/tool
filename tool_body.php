@@ -20,6 +20,7 @@ class tool {
 		$ret .= "<div class='toolContent'>{$jeroen}</div>";
 		$ret .= '<div class="toolFooter">';
 		$ret .= '<p><a href="https://hackersanddesigners.nl/s/Tools">view more tools</a></p>';
+		$ret .= '<p>/</p>'
 		$ret .= '<p><a href="' . $url . '" target="_blank">↗ view in GitHub ↗</a></p>';
 		$ret .= '</div>';
 		$ret .= '</div>';
