@@ -15,16 +15,14 @@ class tool {
 		$text = '{{#github:' . $file . '|' . $user . '/' . $repo . '}}';
 		$jeroen = $parser->recursiveTagParse( $text, $frame );
 
-		$ret = '<table class="toolTable">';
-		$ret .= '<tbody>';
-		$ret .= "<th class='toolHeader' colspan='2'><a href='{$github}/{$user}' target='_blank'>{$user}</a> / <a href='{$github}/{$user}/{$repo}' target='_blank'>{$repo}</a> / {$file}</th>";
-		$ret .= "<tr><div class='toolContent' colspan='2'>{$jeroen}</div></tr>";
-		$ret .= '<tr class="toolFooter">';
-		$ret .= '<td><a href="https://hackersanddesigners.nl/s/Tools">view more tools</a></td>';
-		$ret .= '<td><a href="' . $url . '" target="_blank">↗ view in GitHub ↗</a></td>';
-		$ret .= '</tr>';
-		$ret .= '</tbody>';
-		$ret .= '</table>';
+		$ret = '<div class="tool">';
+		$ret .= "<div class='toolHeader'><a href='{$github}/{$user}' target='_blank'>{$user}</a> / <a href='{$github}/{$user}/{$repo}' target='_blank'>{$repo}</a> / {$file}</div>";
+		$ret .= "<div class='toolContent'>{$jeroen}</div>";
+		$ret .= '<div class="toolFooter">';
+		$ret .= '<p><a href="https://hackersanddesigners.nl/s/Tools">view more tools</a></p>';
+		$ret .= '<p><a href="' . $url . '" target="_blank">↗ view in GitHub ↗</a></p>';
+		$ret .= '</div>';
+		$ret .= '</div>';
     // $ret .= '<p>also appears in:</p>';
 
 		$parser->getOutput()->addModules( 'ext.tool' );
