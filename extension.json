@@ -5,7 +5,7 @@
 		"Karl Moubarak"
 	],
 	"url": "https://github.com/karlmoubarak/GithubEmbed/tool",
-	"descriptionmsg": "tool-desc",
+	"descriptionmsg": "A MediaWiki tag extension to embed, link, and style contents from files hosted on GitHub repositories.",
 	"license-name": "GPL v2",
 	"type": "parserhook",
 	"config": {

@@ -5,8 +5,6 @@ class tool {
 		return true;
 	}
 	static function toolRender( $text, array $args, Parser $parser, PPFrame $frame ) {
-		$parser->getOutput()->addModules( 'ext.tool' );
-
 		$github = 'https://github.com';
 		$user = $args['user'];
 		$repo = $args['repo'];
@@ -29,5 +27,7 @@ class tool {
 		$ret .= '</table>';
     // $ret .= '<p>also appears in:</p>';
 		return $ret;
+
+		$parser->getOutput()->addModules( 'ext.tool' );
 	}
 }
