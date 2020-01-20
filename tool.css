@@ -13,22 +13,23 @@
   border: 1px solid black;
   padding: 5px;
 }
-.toolHeader, .toolContent, .toolFooter {
 
-}
-.toolTable th{
+.toolTable th {
   column-span: all;
   /* text-align: left; */
 }
+
+.toolContent {
+  height: 500px !important;
+}
+
 .toolContent td {
   max-height: 500px !important;
   overflow: scroll;
   /* column-span: all; */
   padding: 10px;
 }
-.toolContent td {
-  /* column-span: all; */
-}
+
 .toolFooter td {
   text-align: center;
 }
