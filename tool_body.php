@@ -26,8 +26,9 @@ class tool {
 		$ret .= '</tbody>';
 		$ret .= '</table>';
     // $ret .= '<p>also appears in:</p>';
-		return $ret;
 
 		$parser->getOutput()->addModules( 'ext.tool' );
+
+		return $ret;
 	}
 }
