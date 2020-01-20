@@ -4,12 +4,12 @@
   overflow: scroll;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 5px;
   background: lightgoldenrodyellow;
   /* filter: drop-shadow(1px 1px 8px black); */
 }
 .toolHeader {
   text-align: center;
+  padding: 5px;
 }
 .toolContent {
   max-height: 500px;
@@ -19,6 +19,7 @@
   border-bottom: 1px solid black;
 }
 .toolFooter {
+  padding: 5px;
   text-align: center;
   display: flex;
   flex-direction: row;
