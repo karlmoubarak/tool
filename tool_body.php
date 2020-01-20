@@ -15,8 +15,8 @@ class tool {
 		$text = '{{#github:' . $file . '|' . $user . '/' . $repo . '}}';
 		$jeroen = $parser->recursiveTagParse( $text, $frame );
 
-		$ret .= '<tool>';
-		$ret = '<div class="tool">';
+		$ret = '<tool>';
+		$ret .= '<div class="tool">';
 		$ret .= "<div class='toolHeader'><a href='{$github}/{$user}' target='_blank'>{$user}</a> / <a href='{$github}/{$user}/{$repo}' target='_blank'>{$repo}</a> / {$file}</div>";
 		$ret .= "<div class='toolContent'>{$jeroen}</div>";
 		$ret .= '<div class="toolFooter">';
