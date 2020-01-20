@@ -23,7 +23,8 @@
   text-align: center;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
-.toolTable p {
+.toolFooter p {
   margin: 0px;
 }
