@@ -1,4 +1,4 @@
-# \<tool />
+# \<tool /\>
 
 A MediaWiki tag extension to embed, link, and style contents from files hosted on GitHub repositories.
 
