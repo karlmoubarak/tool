@@ -11,9 +11,8 @@ class tool {
 		$file = $args['file'];
 
 		$url = $github . '/' . $user . '/' . $repo;
-		$file_url = $url . '/tree/master/' . $file;
 
-		$text = '{{#embed:' . $file_url . '}}';
+		$text = '{{#embed:' . $url . '}}';
 		$jeroen = $parser->recursiveTagParse( $text, $frame );
 
 		$ret = '<tool>';
