@@ -12,7 +12,7 @@ class tool {
 
 		$url = $github . '/' . $user . '/' . $repo;
 
-		$text = '{{#embed:' . $github . '/' . $user . '/' . $repo . '}}';
+		$text = '{{#github:' . $github . '/' . $user . '/' . $repo . '}}';
 		$jeroen = $parser->recursiveTagParse( $text, $frame );
 
 		$ret = '<tool>';
