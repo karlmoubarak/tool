@@ -1,12 +1,12 @@
-# \<tool /\>
+# <tool /\>
 
 A MediaWiki tag extension to embed, link, and style contents from files hosted on GitHub repositories.
 
-→ [Installation](#installation)  
-→ [Usage](#usage)  
-→ [Example](#example)  
-→ [Configuration](#configuration)  
-→ [Credits](#credits)  
+→ [Installation](#installation)
+→ [Usage](#usage)
+→ [Example](#example)
+→ [Configuration](#configuration)
+→ [Credits](#credits)
 
 ## Installation
 
@@ -42,8 +42,8 @@ During development, MediaWiki's caching might get in the way. In your browser's 
 
 Built under [afincato](https://github.com/afincato)'s supervision as part of an ongoing project for the [Hackers and Designers Wiki](https://wiki.hackersanddesigners.nl).
 
----  
+---
 
 
-written with love  
+written with love
 → km < bonjour@moubarak.eu >
