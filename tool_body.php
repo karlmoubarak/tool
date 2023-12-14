@@ -12,7 +12,8 @@ class tool {
 
 		$url = $github . '/' . $user . '/' . $repo;
 
-		$text = '{{#embed:' . $url . '}}';
+		// $text = '{{#embed:' . $url . '}}';
+		$text = '{{#embed:' . 'https://raw.githubusercontent.com/hackersanddesigners/hdsa2019doc/master/readme.md' . '}}';
 		$jeroen = $parser->recursiveTagParse( $text, $frame );
 
 		$ret = '<tool>';
